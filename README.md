@@ -41,4 +41,10 @@ https://nodejs.org/en/
 + **tab Keys** − list of current commands.
 + **.help** − list of all commands.
 + **.save filename** − save the current Node REPL session to a file.
-+ **.load filename** − load file content in current Node REPL session.
++ **.load filename**
++  − load file content in current Node REPL session.
+
+***
+### Callbacks
++ A callback function is called at the completion of a given task.
++ A callback function, also known as a higher-order function, is a function that is passed to another function as a parameter, and the callback function is called (or executed) inside the another function.
