@@ -5,7 +5,7 @@
 + [Callbacks](#callbacks)
 + [Event loop](#event-loop)
 + [Buffers](#buffers)
-+ [Streams and File system](#streas-and-file-system)
++ [Streams and File system](#streams-and-file-system)
 
 ### What is Node.js?
 
