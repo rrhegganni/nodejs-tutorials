@@ -48,3 +48,23 @@ https://nodejs.org/en/
 ### Callbacks
 + A callback function is called at the completion of a given task.
 + A callback function, also known as a higher-order function, is a function that is passed to another function as a parameter, and the callback function is called (or executed) inside the another function.
+
+***
+### Event loop
+Node thread keeps an event loop and whenever a task gets completed, it fires the corresponding event which signals the event-listener function to execute.
+
+```javascript
+emitter.addListener(event, listener)/emitter.on(event, listener)
+emitter.once(event, listener)
+emitter.removeListener(event, listener)
+emitter.removeAllListeners([event])
+emitter.setMaxListeners(n)
+emitter.listeners(event)
+emitter.emit(event, [arg1], [arg2], [...])
+```
+
+***
+### Buffers
++ Pure JavaScript is Unicode friendly, does not handle straight binary data very well. (TCP and File system).
++ Buffers are designed to handle raw binary data, each buffer corresponds to some raw memory allocated outside V8. 
++ Buffers act somewhat like arrays of integers, but aren't resizable and integer values are limited to values from 0 to 255
